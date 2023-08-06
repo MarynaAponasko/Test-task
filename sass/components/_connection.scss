@@ -51,12 +51,21 @@
 }
 
 .input:focus ~ label,
-input:valid ~ label {
+.input.valid ~ label
+// textarea:valid ~ label
+{
   transform: translateY(-35%) scale(0.9);
   background-color: #f3f3f3;
   padding: 1px 1px;
   color: #8d8d8d;
 }
+// .valid {
+//   transform: translateY(-35%) scale(0.9);
+//   background-color: #f3f3f3;
+//   padding: 1px 1px;
+//   color: #8d8d8d;
+// }
+
 .form-conditional {
   display: flex;
 }
