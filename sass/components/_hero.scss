@@ -1,0 +1,245 @@
+.hero {
+  display: block;
+  padding-top: 0;
+}
+
+.hero-info__title {
+  line-height: 1;
+  font-family: var(--primary-font);
+  font-weight: 300;
+  text-transform: uppercase;
+  color: var(--second-font-color);
+}
+.hero-info__title-part {
+  font-weight: 700;
+  color: var(--main-font-color);
+}
+.prev {
+  rotate: 180deg;
+}
+.hero-info__list {
+  display: flex;
+}
+
+.hero-info__item:not(:last-child) {
+  margin-right: 23px;
+}
+
+.hero-info__btn-prev,
+.hero-info__btn-next {
+  border: 1px solid #f2f2f2;
+  background-color: #fff;
+}
+
+.hero-info__btn-prev.disabled,
+.hero-info__btn-next.disabled {
+  opacity: 0.25;
+  pointer-events: none;
+}
+
+.hero-info__btn-prev:hover,
+.hero-info__btn-prev:focus,
+.hero-info__btn-next:hover,
+.hero-info__btn-next:focus {
+  background-color: #f2f2f2;
+}
+
+.hero-info__text {
+  color: var(--primary-font);
+  color: var(--second-font-color);
+  line-height: 1;
+  font-weight: 400;
+}
+
+.hero-info__text-current {
+  position: relative;
+  &::after {
+    content: '';
+    position: absolute;
+    background-color: #e0e0e0;
+  }
+}
+
+.hero-image {
+  position: relative;
+  overflow: hidden;
+}
+
+.hero-image__list {
+  display: flex;
+  flex-wrap: nowrap;
+  width: 200%;
+  height: 100%;
+
+  position: relative;
+  right: 0;
+  transition: all ease-in-out 1000ms;
+}
+
+.hero__button {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+.show-more {
+  padding: 0;
+  border: none;
+  background-color: var(--light-background-color);
+  font-family: var(--primary-font);
+  color: var(--main-font-color);
+  font-size: 12px;
+  line-height: 1;
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: 2.4px;
+  transition: all ease-in-out 1000ms;
+  &:hover,
+  &:focus {
+    background-color: var(--accent-color);
+  }
+}
+.button-icon {
+  margin-left: 12px;
+}
+
+@media screen and (max-width: 767px) {
+  .hero-info {
+    display: block;
+    text-align: center;
+  }
+  .hero-info__title {
+    margin: 0 auto 15px;
+    width: 180px;
+    font-size: 32px;
+    line-height: 1;
+    font-family: var(--primary-font);
+    font-weight: 300;
+    text-transform: uppercase;
+    color: var(--second-font-color);
+  }
+  .hero-info__list {
+    margin-bottom: 20px;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .hero-info__btn-prev,
+  .hero-info__btn-next {
+    width: 35px;
+    height: 35px;
+  }
+  .hero-info__text {
+    font-size: 22px;
+    margin-bottom: 20px;
+  }
+
+  .hero-info__text-current {
+    margin-right: 45px;
+
+    &::after {
+      content: '';
+      position: absolute;
+      top: -3px;
+      left: 54px;
+      rotate: 30deg;
+      height: 30px;
+      width: 2px;
+      background-color: #e0e0e0;
+    }
+  }
+  .show-more {
+    width: 180px;
+    height: 55px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .hero {
+    display: flex;
+  }
+  .hero-info__title {
+    margin-top: 180px;
+    margin-right: 75px;
+    font-size: 38px;
+    line-height: 1;
+    font-family: var(--primary-font);
+    font-weight: 300;
+    text-transform: uppercase;
+    color: var(--second-font-color);
+    margin-bottom: 30px;
+  }
+  .hero-info__list {
+    display: flex;
+    margin-bottom: 35px;
+  }
+  .hero-info__btn-prev,
+  .hero-info__btn-next {
+    width: 53px;
+    height: 53px;
+  }
+  .hero-info__text {
+    font-size: 24px;
+  }
+
+  .hero-info__text-current {
+    margin-right: 68px;
+    position: relative;
+    &::after {
+      content: '';
+      position: absolute;
+      top: -6px;
+      left: 68px;
+      rotate: 38deg;
+      height: 36px;
+      width: 2px;
+      background-color: #e0e0e0;
+    }
+  }
+  .show-more {
+    padding: 0;
+    width: 200px;
+    height: 47px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .hero-info__title {
+    margin-top: 300px;
+    margin-right: 122px;
+    width: 278px;
+    font-size: 64px;
+    line-height: 1;
+    font-family: var(--primary-font);
+    font-weight: 300;
+    text-transform: uppercase;
+    color: var(--second-font-color);
+    margin-bottom: 90px;
+  }
+  .hero-info__list {
+    display: flex;
+    margin-bottom: 90px;
+  }
+  .hero-info__text {
+    font-size: 24px;
+  }
+
+  .hero-info__text-current {
+    margin-right: 89px;
+
+    &::after {
+      content: '';
+      position: absolute;
+      top: -6px;
+      left: 73px;
+      rotate: 38deg;
+      height: 44px;
+      width: 2px;
+      background-color: #e0e0e0;
+    }
+  }
+  .show-more {
+    padding: 0;
+    width: 222px;
+    height: 71px;
+  }
+}

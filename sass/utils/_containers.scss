@@ -1,0 +1,28 @@
+.container {
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@media screen and (min-width: 480px) {
+  .container {
+    width: 480px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .container {
+    width: 768px;
+    padding-left: 65px;
+    padding-right: 65px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .container {
+    width: 1440px;
+    padding-left: 135px;
+    padding-right: 135px;
+  }
+}
