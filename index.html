@@ -17,7 +17,7 @@
     <link rel="stylesheet" href="./sass/main.css" />
   </head>
   <body>
-    <header id="main">
+    <header class="section-js" id="main">
       <div class="container page-header__container">
         <nav class="navigation">
           <a class="link logo" href="/">
@@ -117,21 +117,23 @@
               </svg>
             </div>
           </a>
-          <ul class="navigation__list">
+          <ul class="navigation__list navigation__list-js">
             <li class="navigation__item">
-              <a href="#main" class="navigation__link navigation__link_current">главная</a>
+              <a href="#main" class="navigation__link-js navigation__link navigation__link_current"
+                >главная</a
+              >
             </li>
             <li class="navigation__item">
-              <a href="#gallery" class="navigation__link">галерея</a>
+              <a href="#gallery" class="navigation__link navigation__link-js">галерея</a>
             </li>
             <li class="navigation__item">
-              <a href="#projects" class="navigation__link">проекты</a>
+              <a href="#projects" class="navigation__link navigation__link-js">проекты</a>
             </li>
             <li class="navigation__item">
-              <a href="#main" class="navigation__link">сертификаты</a>
+              <a href="#connection" class="navigation__link navigation__link-js">сертификаты</a>
             </li>
             <li class="navigation__item">
-              <a href="#footer" class="navigation__link">контакты</a>
+              <a href="#footer" class="navigation__link navigation__link-js">контакты</a>
             </li>
           </ul>
           <button type="button" class="mobile-menu-open" data-menu-open>
@@ -169,7 +171,7 @@
       </div>
     </header>
     <main>
-      <section class="section" id="gallery">
+      <section class="section section-js" id="gallery">
         <div class="container hero">
           <div class="hero-info">
             <h1 class="hero-info__title">
@@ -233,7 +235,7 @@
         </div>
       </section>
 
-      <section class="section about">
+      <section class="section section-js about" id="about">
         <div class="container">
           <div class="about-wrapper">
             <div class="about-images">
@@ -305,7 +307,7 @@
         </div>
       </section>
 
-      <section class="section">
+      <section class="section section-js" id="tasks">
         <div class="container">
           <div class="task">
             <h2 class="task__title">Основные задачи</h2>
@@ -327,7 +329,7 @@
           </div>
         </div>
       </section>
-      <section class="section" id="projects">
+      <section class="section section-js" id="projects">
         <div class="container">
           <div class="gallery">
             <h2 class="gallery__title">Наши проекты</h2>
@@ -571,7 +573,7 @@
           </div>
         </div>
       </section>
-      <section class="section">
+      <section class="section section-js" id="connection">
         <div class="container">
           <div class="connection">
             <h2 class="connection__title">Связаться с нами</h2>
@@ -641,7 +643,7 @@
         </div>
       </section>
     </main>
-    <footer class="footer" id="footer">
+    <footer class="footer section-js" id="footer">
       <div class="container footer-container">
         <div class="footer-container__main-content">
           <div class="footer__logo">
@@ -663,21 +665,23 @@
           </div>
           <div class="footer-information">
             <h3 class="footer__title">Информация</h3>
-            <ul class="footer-information__list">
+            <ul class="footer-information__list navigation__list-f-js">
               <li class="footer-information__item">
-                <a href="#main" class="footer-information__link">Главная</a>
+                <a href="#main" class="footer-information__link navigation__link-js">Главная</a>
               </li>
               <li class="footer-information__item">
-                <a href="#gallery" class="footer-information__link">Галерея</a>
+                <a href="#gallery" class="footer-information__link navigation__link-js">Галерея</a>
               </li>
               <li class="footer-information__item">
-                <a href="#projects" class="footer-information__link">Проекты</a>
+                <a href="#projects" class="footer-information__link navigation__link-js">Проекты</a>
               </li>
               <li class="footer-information__item">
-                <a href="#main" class="footer-information__link">Сертификаты</a>
+                <a href="#connection" class="footer-information__link navigation__link-js"
+                  >Сертификаты</a
+                >
               </li>
               <li class="footer-information__item">
-                <a href="#footer" class="footer-information__link">Контакты</a>
+                <a href="#footer" class="footer-information__link navigation__link-js">Контакты</a>
               </li>
             </ul>
           </div>
@@ -756,5 +760,6 @@
     <script src="./JS/gallery.js" type="module"></script>
     <script src="./JS/form.js" type="module"></script>
     <script src="./JS/mobile-menu.js" type="module"></script>
+    <script src="./JS/scroll.js" type="module"></script>
   </body>
 </html>
