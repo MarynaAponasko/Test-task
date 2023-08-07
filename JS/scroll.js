@@ -32,9 +32,9 @@ function smoothScroll(event) {
     event.preventDefault();
 
     const id = event.target.getAttribute('href').replace('#', '');
-
+    const top = document.getElementById(id).offsetTop - 107;
     window.scrollTo({
-      top: document.getElementById(id).offsetTop,
+      top: top,
       behavior: 'smooth',
     });
   }

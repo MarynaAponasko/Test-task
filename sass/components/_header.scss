@@ -2,11 +2,17 @@
 //     z-index: 1000;
 // }
 
+.header {
+  background-color: var(--light-background-color);
+  position: sticky;
+  z-index: 999;
+  width: 100%;
+  top: 0;
+  left: 0;
+}
 .page-header__container {
   padding-top: 30px;
   padding-bottom: 30px;
-  // position: fixed;
-  // z-index: 999;
 }
 .navigation {
   display: flex;
